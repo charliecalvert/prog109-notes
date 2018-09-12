@@ -1,0 +1,26 @@
+body {
+    font-size: 133%;
+    font-family: sans-serif;
+}
+
+img {
+    float: left;
+    padding-right: 15px;
+    width: 125px;
+    height: auto;   
+}
+
+h1 {
+    font-size: 165%;
+}
+
+h2 {
+    clear: left;
+    font-size: 140%;
+}
+
+main {
+    margin: auto;
+    width: 700px;
+    height: 580px;
+}

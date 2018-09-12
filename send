@@ -1,0 +1,8 @@
+#! /bin/bash
+PDIR="$HOME/Git/charliecalvert.github.io/books/CloudNotes/Prog109/."
+
+cp -v *.html *.css $PDIR
+cd $PDIR
+git add .
+git commit -m "send $NOW"
+git push
