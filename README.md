@@ -4,4 +4,4 @@ Here you can find some materials for Charlie Calvert's Prog 109 course. This cou
 
 More details on the [site](https://www.elvenware.com/teach/prog109)
 
-On School machine test.
+On School machine.
