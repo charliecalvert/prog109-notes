@@ -3,6 +3,10 @@
 .vscode
 old
 foo.html
+foo.css
+foo.txt
+bar.css
+bar.txt
 bar.html
 *~
 *#
