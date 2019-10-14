@@ -124,8 +124,22 @@
             <section id="other">
                 <h2>Other</h2>
 
+                <figure class="left border">
+                <img  src="../images/Icon_Information.svg" alt="info">
+                <figcaption>Figure 1: Info</figcaption>
+                </figure>
+
                 <p>Have at least one relatively small image float left or right. Wrap it in a <b>figure</b> element and
-                    include a <b>figcaption</b> element.</p>
+                    include a <b>figcaption</b> element. This involves putting together about four lines of code. Examples of the four lines are present in the links below in this outline of the code you should right. The icon floated left in this section shows what I want to see.</p>
+
+                    <ul>
+                        <li>Declare a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">figure element</a> with a <b>class</b> of right or left</li>
+                        <li>Inside it put an <b>img</b> element with <b>src</b> set to something about 100px X 100px</li>
+                        <li>Next comes the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">figcaption</a></li>
+                        <li>Clost the <b>figure</b> element.</li>
+                    </ul>
+
+                <p><b>Hint</b>: <i>Try to find your own unique image, but if you are stuck, consider using <a href="https://commons.wikimedia.org/wiki/File:Icon_Information.svg"> this SVG image</a></i></p>                    
 
                 <p>To float left:</p>
 
@@ -142,13 +156,25 @@
                     reasonable on a mobile device.</p>
 
                 <p>I may define a few more CSS rules that you can create for your theme documents.</p>
+
+                <p>In this document, I added a second class to my figure element:</p>
+
+                <pre class="code">
+
+    figure.border {
+        background-color: lightslategray;
+        border: black solid thin;
+        padding: 5px;
+    }                    
+                </pre>
             </section>
 
             <section id="turn-it-in">
                 <h2>Turn it in</h2>
 
-                <p>To turn it in, just push your repository. I'll look in the your <b>theme</b> directory for your
-                    work.</p>
+                <p>To turn it in, just push your repository. I'll look in the your <b>root</b> directory for your
+                    work. Optionally, you can also create a <b>theme</b> directory and put a similar <b>index.html</b> 
+                    in it, but don't include any hyperlinks (anchors).</p>
                 <p>I'm looking for at least two HTML files and one CSS file.</p>
 
                 <ul>
