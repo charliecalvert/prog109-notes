@@ -88,22 +88,19 @@
         <section>
             <h1>Load the Image</h1>
 
-            <p>Create a file called <b>download-image.html</b> in the root of your repository. Prep it as you usually
-                would, and link in a CSS file of your choice. This CSS file must must be one that you created by hand.
-                Finally, link to <b>download-image.html</b> from your GitHub pages home page. Your home page is usually
-                called <b>index.html</b> and is located in the root of your repository.</p>
+            <p>Create a file called <b>download-image.html</b> in the <b>assignments</b>  directory of your repository. (If that directory does not exist, please create it. Prep the new HTML file as you usually would, and link in our <b>styles/styles.css</b> file. This CSS file must must be one that you created by hand. Finally, link to <b>download-image.html</b> from your GitHub pages home page. Your home page is usually called <b>index.html</b> and is located in the root of your repository.</p>
 
             <p>
-                In your new HTML document, load the image you downloaded like this:
+                In your new HTML document, load the image you downloaded using code identical or similar to this:
             </p>
 
-            <pre>&lt;img src="images/utah-440520_640.jpg" alt="mountain sunset"&gt;</pre>
+            <pre>&lt;img src="/images/utah-440520_640.jpg" alt="mountain sunset"&gt;</pre>
 
             <p>In the <b>src</b> attribute, we don't just write the name of the <b>jpg</b> file. Instead, we write both the directory where the file is stored and the name of the image file:</p>
                 
-            <pre>src="images/utah-440520_640.jpg"</pre>
+            <pre>src="/images/utah-440520_640.jpg"</pre>
 
-            <p>We do this because <b>download-images.html</b> is in the root of the site, but the <b>jpg</b> file is in the <b>images</b> directory. Note that this particular image does not require attribution. This fact is spelled out on the pixabay site.</p>
+            <p>We do this because <b>download-images.html</b> is in the assignments directory of you site, but the <b>jpg</b> file is in the <b>images</b> directory. Note that this particular image does not require attribution. This fact is spelled out on the pixabay site.</p>
 
             <img class="normal-image" src="/images/utah-440520_640.jpg" alt="foo">
 
@@ -118,7 +115,7 @@
             <pre>&lt;img src="http://www.elvenware.com/foo.png" alt="foo"&gt;</pre>
 
             <p>Paths like this can be linked from anywhere in the web. But suppose you are trying to link to a document
-                on your own web site. In those casees, you don't need to include the name of your website because you
+                on your own web site. In those cases, you don't need to include the name of your website because you
                 are already on your website. Instead, you can just enter the name of the file you want to link to. Sometimes you need to include directory information, as we did in the previous section where our file was stored in the images directory. That was an example of a relative path, but it was a simple example.</p>
 
             <p>The trouble comes when you are in a subdirectory of your website and want to link to a document that is closer to the root
@@ -153,14 +150,16 @@
             <p>Check that you do the following:</p>
             <ul>
                 <li>Store two images in the <b>images</b> directory. One is the mountain image referenced above, the second is a file that fits in with your theme site.</li>
-                <li>Display both images in <b>download-images.html</b>. This HTML file should be in the root of your repository.</li>
+                <li>Display both images in <b>download-images.html</b>. This HTML file should be in the <b>assignments</b> directory of your repository.</li>
                 <li>Display one of the local images in the <b>index.html</b> file from your <b>theme</b> directory.</li>
-                <li>Provide a link to your download-image.html file on GitHub pages.</li>
+                <li>Provide a link to your <b>download-image.html</b> file from the home page on your GitHub pages site.</li>
             </ul>
 
             <p><b>NOTE</b>: <i>In the midterm, I'm going to ask that you link to files that are stored on remote sites, and stored locally. So this will be a chance to ensure that the home page of your theme directory links to files of both types. In other words, this is both a stand alone assignment and a step toward your midterm. </i></p>
 
-            <p>In declaring an image, it is usually a good idea to specify the <b>width</b> and <b>height</b> either in the tag itself, or in CSS. Note that if you define the width and height in the tag, and then want to define it in the CSS, I would carefully check how it turns out, and if you need to remove the tags from the img attribute or override both in the CSS.</p>
+            <p>In declaring an image, it is sometimes a good idea to specify the <b>width</b> and <b>height</b> in a CSS file or sometimes in the tag itself. Note that if you define the width and height in the tag, and then want to define it in the CSS, I would carefully check how it turns out, and if you need to remove the tags from the img attribute or override both in the CSS.</p>
+
+            <p>See the example at the top of the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">MDN page on the <b>img</b> element</a> to see how to use CSS to define the width of an image.</p>
         </section>
     </main>
 
