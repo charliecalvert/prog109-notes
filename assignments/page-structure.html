@@ -148,9 +148,6 @@
     }
                 </code></pre>
 
-                <p>You can use the <b>clear</b> property on an element to make it move below and to the left of the
-                    image you have floated to the left or right. But you might not need to do that in this case.</p>
-
                 <p>Also use the doo-hickey in the developer tools or your phone to see that your site looks at least
                     reasonable on a mobile device.</p>
 
@@ -168,6 +165,38 @@
                 </pre>
             </section>
 
+            <section>
+                <h2>Clear Floats</h2>
+
+                <p>You can use the <b>clear</b> property on an element to make it move below and to the left of the
+                    image you have floated to the left or right. But you might not need to do that in this case.</p>
+
+                <p>If we float an image to the left, then sometimes everything works out right because the text we want to wrap around the image completely surrounds the image. However, there are frequent times when the image sticks out beneath the text that wanted to surround it. In that case, we can hit a but where the next section or paragraph of our content also starts to wrap around our image. For instance, a footer might begin to wrap around the image. To fix this, we could use the following CSS on the footer:</p>
+
+                <pre class="code scroll">
+
+    footer {
+        clear: both;
+    }
+                </pre>
+
+                This should ensure that the footer appears beneath the image. Sometimes our CSS code might require that we put a CLASS or ID on a section, and pick out that section in our CSS like this:
+
+                <pre class="scroll code">
+
+    section.clear {
+        clear: both
+    }
+                </pre>
+
+                <p>In this case, I'm assuming that one or more of your sections have their class set to <b>clear</b>:</p>
+
+                <pre class="code scroll">
+                    
+    &lt;section class="clear"&gt;&lt;/section&gt;
+                </pre>
+
+            </section>
             <section id="turn-it-in">
                 <h2>Turn it in</h2>
 
