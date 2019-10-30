@@ -12,36 +12,107 @@
 <body>
 
     <header>
-        <h1>Today in Class: 10-29-18</h1>
-        <p>Learn JavaScript Looping and Branching.</p>
+        <h1>Branching</h1>
+        <p>Learn JavaScript Branching.</p>
         <p class="byline">by Charlie Calvert</p>
     </header>
 
 
     <main>
-        <h2>Making Decisions</h2>
-        <h3>Branching and Conditional Statements</h3>
-        <p>When we write code we often need to test if a condition is true or false in order to make a decision. In JavaScript we have three conditional statements:</p>
-        <ul>
-            <li>if statement&nbsp;- test if a condition is true or false. Execute code only if it is true.</li>
-            <li>if...else statement&nbsp;- test is a condition is true or false and do one thing if it is true and
-                another if it is false.</li>
-            <li>switch statement;- Sometimes length if-else statements can be hard to read. <b>switch</b> statements
-                provide an alternative syntax.</li>
-        </ul>
+        <section>
+            <h2>Making Decisions</h2>
+            <h3>Branching and Conditional Statements</h3>
+            <p>When we write code we often need to test if a condition is true or false in order to make a decision. In
+                JavaScript we have three conditional statements:</p>
+            <ul>
+                <li>if statement&nbsp;- test if a condition is true or false. Execute code only if it is true.</li>
+                <li>if...else statement&nbsp;- test is a condition is true or false and do one thing if it is true and
+                    another if it is false.</li>
+                <li>switch statement;- Sometimes length if-else statements can be hard to read. <b>switch</b> statements
+                    provide an alternative syntax.</li>
+            </ul>
 
-    <h2>Learn</h2>
+        </section>
+        <section>
 
-        <p>Learn about <a href="https://www.elvenware.com/charlie/development/web/JavaScript/JavaScriptBasics.html#branching" target="_blank">Branching on Elvenware</a>.</p>
+            <h2>if Statement</h2>
 
-        <p>Learn about <a href="https://bc.instructure.com/courses/1647882/pages/operators?module_item_id=29761247" target="_blank">operators</a></p>
+            <pre class="code scroll">
+    const height = 5;
+    if (height >= 5) {
+        console.log('We have a big one');
+    }
+            </pre>
 
-        <p>Learn about <a href="https://bc.instructure.com/courses/1647882/pages/variables?module_item_id=29761246" target="_blank">variables</a></p>
+        </section>
 
-    <h2>Ron's Video</h2>    
+        <section>
+            <h2>if-else Statement</h2>
 
-        <p><iframe style="display: block; margin-left: auto; margin-right: auto;" src="https://www.youtube.com/embed/EewukMJhbm8"
-                width="80%" height="315"></iframe></p>
+            <p>We can have one or more else statements.</p>
+            <pre class="code scroll">
+    const height = 5;
+    if (height >= 5) {
+        console.log('We have a big one');
+    } else {
+        console.log('We have a little one');
+    }
+                </pre>
+
+            <p>More complex:</p>
+
+            <pre class="scroll code">
+    const height = 5;
+    if (height >= 5) {
+        console.log('We have a big one');
+    } else if (height >= 0) {
+        console.log('We have a little one');
+    } else {
+        console.log('We have a negative number or invalid number')
+    }
+        </pre>
+
+        </section>
+        <pre class="code scroll">
+    height = 'little';
+
+    switch(height) {
+        case 'little':
+            console.log('Switch: a little one is smaller than five');
+            break;
+    
+        case ('big'):
+            console.log('Switch: a big one is five or greater');
+            break;
+    
+        default:
+            console.log('We do not know about this one.')
+    }
+        </pre>
+        <section id="switcher">
+
+        </section>
+        <section>
+            <h2>Learn</h2>
+
+            <p>Learn about <a
+                    href="https://www.elvenware.com/charlie/development/web/JavaScript/JavaScriptBasics.html#branching"
+                    target="_blank">Branching on Elvenware</a>.</p>
+
+            <p>Learn about <a href="https://bc.instructure.com/courses/1647882/pages/operators?module_item_id=29761247"
+                    target="_blank">operators</a></p>
+
+            <p>Learn about <a href="https://bc.instructure.com/courses/1647882/pages/variables?module_item_id=29761246"
+                    target="_blank">variables</a></p>
+
+        </section>
+
+        <section>
+            <h2>Ron's Video</h2>
+
+            <p><iframe style="display: block; margin-left: auto; margin-right: auto;"
+                    src="https://www.youtube.com/embed/EewukMJhbm8" width="80%" height="315"></iframe></p>
+        </section>
     </main>
 
     <footer>
