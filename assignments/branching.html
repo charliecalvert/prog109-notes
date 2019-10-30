@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Branching</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        .code {
+            padding-top: 15px;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Branching</h1>
+        <h1>Branching Basics</h1>
         <p>Learn JavaScript Branching.</p>
         <p class="byline">by Charlie Calvert</p>
     </header>
@@ -32,6 +38,9 @@
                     provide an alternative syntax.</li>
             </ul>
 
+            <p>You will be asked to test and create some code in this assignment. To get started, create a file called 
+                <b>javascript-tests/branching.js</b>. Do your work in this file.
+            </p>
         </section>
         <section>
 
@@ -73,9 +82,11 @@
         </pre>
 
         </section>
-        <h2>Switch statements</h2>
 
-        <pre class="code scroll">
+        <section id="switcher"></section>
+            <h2>Switch statements</h2>
+
+            <pre class="code scroll">
     height = 'little';
 
     switch(height) {
@@ -91,8 +102,61 @@
             console.log('We do not know about this one.')
     }
         </pre>
-        <section id="switcher">
 
+        </section>
+
+        <section id="button-click">
+            <p>Create a file called <b>javascript-tests/branching.html</b> Initialize it as usual with HTML 5. Include a script tag to link in <b>branching.js</b></p>
+
+            <pre class="code scroll">
+    &lt;script src="./branching.js"&gt;&lt;/script&gt;
+            </pre>
+
+            <p>Inside the <b>body</b> element add a paragraph:</p>
+
+            <pre class="code scroll">
+    &lt;p id="simpleBranchDisplay"&gt;Nothing so far&lt;/p&gt;
+            </pre>
+
+            <p>Beneath it, add a button:</p>
+
+            <pre class="code scroll">
+    &lt;button&gt;Show Simple Branch&lt;/button&gt;
+            </pre>
+
+            <p>We are going to want to respond when the user clicks on the button. Many people have learned to take the first steps to this goal by writing code like this:</p>
+
+            <pre class="code scroll">
+    &lt;button onclick="simpleBranchAction"&gt;Show Simple Branch&lt;/button&gt;
+            </pre>
+
+            <p>This is a bad practice and should be discourged. For more on this subject, go <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">here</a> and search the section called <b>inline event handlers — don't use these</b>.</p>
+
+            <p>You should instead simply put an <b>id</b> on your button:</p>
+
+            <pre class="code scroll">
+    &lt;button id="simpleBranchAction"&gt;Show Simple Branch&lt;/button&gt;
+            </pre>
+
+            <p>Now write code like this to respond to the event:</p>
+
+            <pre class="scroll code">
+    window.onload = () => {
+        const simpleBranchAction = document.getElementById('simpleBranchAction');
+        const simpleBranchDisplay = document.getElementById('simpleBranchDisplay');
+        
+        simpleBranchAction.onclick = (event) => {
+            let height = 4;
+            if (height >= 5) {
+                simpleBranchDisplay.textContent = 'We have a big one';
+            } else {
+                simpleBranchDisplay.textContent = 'We have a little one';
+            }   
+        }
+    }                
+            </pre>
+
+            <p>We will discuss this code in class. You can, of course, get more information on MDN and elsewhere across the web.</p>
         </section>
         <section>
             <h2>Learn</h2>
