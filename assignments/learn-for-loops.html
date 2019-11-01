@@ -79,20 +79,25 @@
         </section>
 
         <section>
-            <h2>Create a <b>lib</b> directory</h2>
+            <h2>Elf Code</h2>
 
             <p>Sometimes we have files that we use in multiple places in our code. One such a file is <b>elf-code.js</b>
-                from the ListButton assignment. Let's move that file to a location where all our projects can access
-                it. </p>
+                from the ListButton assignment. As you may know, here is the contents of that file:</p>
+            
+            <pre class="scroll code">
+const elfCode = {
+    appendToList: (list, value) => {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(value));
+        list.appendChild(li);
+    }
+}
+            </pre>
 
-            <pre><code>git mv ListButton/elf-code.js lib/.</code></pre>
-
-            <p>Create a file called <b>index.js</b> in our <b>for-loop</b> directory.</p>
-
-            <p>Link our JavaScript files into <b>for-loop/index.html</b>.</p>
+            <p>Link our JavaScript files into <b>for-loop.html</b>.</p>
             <pre><code>
-    &lt;script src="../lib/elf-code.js"&gt;&lt;/script&gt;
-    &lt;script src="index.js"&gt;&lt;/script&gt;
+    &lt;script src="./elf-code.js"&gt;&lt;/script&gt;
+    &lt;script src="./for-loop.js"&gt;&lt;/script&gt;
             </code></pre>
             
             <p>In <b>index.html</b> also add an unordered list</p>
