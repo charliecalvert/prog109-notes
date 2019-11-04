@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Looping over Complex Types</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../../../">Elvenware Home Page</a></li>
+            <li><a href="../">Prog109 Home Page</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#arrays">Arrays</a></li>
+            <li><a href="#objects">Objects</a></li>
+            <li><a href="#turn-it-in">Turn it in</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h1>Looping over Complex Types</h1>
+
+            <p>The simple types are <b>number</b>, <b>string</b>, <b>boolean</b>, <b>null</b>, and <b>undefined</b>. These types are essential to JavaScript programming and you must understand them.</p>
+            
+            <p>There are two important complex types that you must know. The good news is that they are not really that complex, they are not really that hard to understand. The types are:</p>
+
+            <ul>
+                <li>Arrays</li>
+                <li>Objects</li>
+            </ul>
+
+            <p>Both these types are commonly used in loops, so we will cover that subject at the same time.</p>
+        </section>
+
+        <section id="get-started">
+            <h2>Get Started</h2>
+            
+            <p>In your <p>javascript-tests</p> directory create a file called <b>looping-over-complex-types.js</b>. We will do some work during class in that file. At the end of the class, be sure to push the file.</p>
+
+
+        </section>
+        <section id="arrays">
+            <h2>Arrays</h2>
+
+            <p>Here is how to declare an array:</p>
+
+            <pre class="code scroll">
+    const myArray = [];
+            </pre>
+
+            <p>We can also pre-populate our array with content:</p>
+
+            <pre class="code scroll">
+    const numbers = [1, 2, 3, 4, 5, 8, 10];
+            </pre>
+
+            <p>Here is how to access a memeber of this array using zero based indexers</p>
+
+            <pre class="code scroll">
+    const numbers = [1, 2, 3, 4, 5, 8, 10];
+    console.log(numbers[1]);
+    console.log(numbers[0]);
+    console.log(numbers[numbers.length - 1]);
+            </pre>
+
+            <p>Here is how to dynamically add an item to an array:</p>
+
+            <pre class="code scroll">
+    const numbers = [1, 2, 3, 4, 5, 8, 10];
+    numbers.push(12);
+    console.log(numbers);
+    numbers.pop(); // Remove the last item
+    console.log(numbers);
+            </pre>
+
+            <p>As you will see later, you can put numbers, strings, booleans, arrays, and objects in inside an array. For instance:</p>
+
+            <pre class="code scroll">
+    const items = [1, 'two', [3, 4], false, null];
+            </pre>            
+
+        </section>
+
+        <section id="loop-array">
+            <h2>Loop over Arrays</h2>
+
+            <p>Here is how to loop over an array:</p>
+
+            <pre class="code scroll">
+    const items = [1, 'two', [3, 4], false, null];
+    for (let i = 0; i < items.length; i++) {
+        console.log(items[i]);
+    }                    
+            </pre>
+
+            <p>Here is a simpler way to loop over an array:</p>
+
+            <pre class="code scroll">
+    const numbers = [1, 2, 3, 4, 5, 8, 10];
+    for (let number of numbers) {
+        console.log(numbers);
+    }                    
+            </pre>
+
+            <p>Here are JavaScript methods for converting a string to an array and vice-versa:</p>
+
+            <pre class="code scroll">
+function arrayToString(array) {
+    console.log(array.join(', '));
+}
+
+function stringToArray(input) {
+    console.log(input.split(','));
+}
+
+
+arrayToString(["bundle.js", "*.js.map", ".c9"]);
+
+stringToArray("bundle.js, *.js.map, .c9");
+            </pre>
+        </section>
+        
+        <section id="objects">
+            <h2>Objects</h2>
+
+            <p>Objects contain properties and functions. For now, we will only add properties to our objects.</p>
+
+            <p>Here is how to declare an object:</p>
+
+            <pre class="code scroll">
+    const myObject = {};
+            </pre>
+
+            <p>Here is how to declare an object with two properties:</p>
+
+            <pre class="code scroll">
+    const myObject = {
+        five: 5,
+        six: 'six'
+    };
+            </pre>
+
+            <p>Here is how to access a member of this object</p>
+        
+            <pre class="code scr">
+    const myObject = {
+        five: 5,
+        six: 'six'
+    };            
+
+    console.log(myObject.five);
+    console.log(myObject.six);
+            </pre>
+
+            <p>Here is how to dynamically add an item to an object:</p>
+
+            <pre class="code scroll">
+    const myObject = {
+        five: 5,
+        six: 'six'
+    };            
+
+    myObject.newItem = 'This is a new item in my object.'
+    console.log(myObject.five);
+    console.log(myObject.six);
+    console.log(myObject.newItem);
+            </pre>
+        </section>
+
+        <section id="turn-it-in">
+            <h2>Turn it in</h2>
+
+            <p>Push the work we did in class today. When you submit the assignment, state the name of your repo and the name of the file where we did our work. Create a file called <b>javascript-tests/looping-over-complex-types.html</b>. Give it a h1 element and your byline. Link in <b>looping-over-complex-types.js</b> and link to it from your home page. Provide a link to your home page on the GitHub Pages live site.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2018 Charlie Calvert</p>
+
+        <nav>
+            <ul>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/index.html">Home</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
