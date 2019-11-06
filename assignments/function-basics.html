@@ -24,7 +24,9 @@
             <li><a href="#build-functions">Build Functions</a></li>
             <li><a href="#build-page">Build Page</a></li>
             
-            <li><a href=""></a></li>
+            <li><a href="#add-to-list-background">Add to List Background</a></li>
+            <li><a href="#add-to-list">Add to List</a></li>
+            <li><a href="#turn-it-in">Turn it in</a></li>
         </ul>
     </nav>
     <main>
@@ -158,8 +160,8 @@ const data = nameDisplay.value;
             </pre>
             </section>
             
-            <section id="add-to-list">
-            <h2>Add to List</h2>
+            <section id="add-to-list-background">
+            <h2>Add to List Background</h2>
     
             <p>Sometimes we have files that we use in multiple places in our code. One such a file is <b>elf-code.js</b>
                from the ListButton assignment. As you may know, here is the contents of that file:</p>
@@ -173,7 +175,20 @@ const elfCode = {
     }
 }
             </pre>
+
+            <p>We also need to remember how button <b>onclick</b> events work:</p>
+
+            <pre class="code scroll">
+const someAction = document.getElementById('someAction');
+someAction.onclick = function() {
+    // Handle the onclick event in here.
+}
+            </pre>
+
+        </section>
     
+        <section id="add-to-list">
+            <h2>Add to List Steps</h2>
             <p>Link our JavaScript files into <b>for-loop.html</b>.</p>
             <pre class="code scroll">
 &lt;script src="./elf-code.js"&gt;&lt;/script&gt;
@@ -185,10 +200,28 @@ const elfCode = {
 &lt;ul id="listDisplay"&gt;&lt;/ul&gt;
             </pre>
 
+            <p>To make this work we need several things to happen:</p>
+
+            <ul>
+                <li>We need handles to three HTML elements. Get the handle by calling <b>getElementById</b>. Get handles to:
+                    <ul>
+                        <li>The button: <b>addToListAction</b></li>
+                        <li>The list element: <b>listDisplay</b></li>
+                        <li>The input element: <b>nameDisplay</b></li>
+                    </ul>
+                </li>
+                <li>Inside the <b>onclick</b> method of the <b>addToListAction</b> button:
+                    <ul>                        
+                        <li>Use the <b>value</b> property of the <b>nameDisplay</b> to get the input entered by the user</li>
+                        <li>Use <b>elfCode.appendToList</b> to append the user input to the <b>listDisplay</b></li>
+                    </ul>
+                </li>
+                
+            </ul>
     
         </section>
 
-        <section>
+        <section id="turn-it-in">
             <h2>Turn it in</h2>
 
             <p>Push your repository. When you submit your assignment, tell the me the folder and file names you have
@@ -198,7 +231,10 @@ const elfCode = {
                 please give me the appropriate names.
             </p>
 
-            <p>Provide the following when the button is clicked. The string associated with the following functions
+            <p>You have two buttons. Make sure they both work.</p>
+
+            <p>When the <b>Add to List</b> button is clicked, then information typed into the input control should be added to a list.</p>
+            <p>Provide the following when the <b>Call Functions</b> button is clicked. The string associated with the following functions
                 should be displayed on the HTML page:</p>
 
             <ul>
