@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Learn for-loops</title>
-    <link rel="icon" type="image/png" href="favicon.png"> 
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
@@ -14,7 +14,7 @@
     <header>
         <h1>Learn for-loops</h1>
     </header>
-    
+
     <nav>
         <ul>
             <li><a href="../../../">Elvenware Home Page</a></li>
@@ -35,7 +35,7 @@
 
             <ul>
                 <li>Create a directory called <b>for-loops</b>.</li>
-                <li>Inside it create a file called <b>index.html</b>.</li>
+                <li>Inside it create a file called <b>index.html</b> and <b>index.js</b>.</li>
                 <li>Initialize <b>index.html</b> with the emmet html5 or ! macro.
                     <ul>
                         <li>Set the title to be <b>Learn about for-loops.</b></li>
@@ -48,9 +48,9 @@
                 <li>Create a link from your home page to the <b>index.html</b> file in your <b>for-loop</b> directory.</li>
             </ul>
 
-            <p><b>HINT</b>: <i>Consider opening up HTML files you created early in the quarter to 
-                    remind you of how to flesh out some of the sections such as the <b>footer</b>. For me, at least, 
-                    it is helpful to build up a set of reference files that I can turn to when I need reminders about 
+            <p><b>HINT</b>: <i>Consider opening up HTML files you created early in the quarter to
+                    remind you of how to flesh out some of the sections such as the <b>footer</b>. For me, at least,
+                    it is helpful to build up a set of reference files that I can turn to when I need reminders about
                     how to write commonly used bits of code.</i></p>
         </section>
 
@@ -68,7 +68,7 @@
                 assignment.</p>
 
             <pre>
-                <code>                  
+                <code>
     &lt;button id="set-text" type="button"&gt;Set Text&lt;/button&gt;
                 </code>
             </pre>
@@ -80,13 +80,13 @@
         <section>
             <h2>Link Code</h2>
 
-            
+
 
             <p>Link our JavaScript files into <b>for-loop.html</b>.</p>
             <pre class="code scroll">
 &lt;script src="./for-loop.js"&gt;&lt;/script&gt;
             </pre>
-            
+
         </section>
 
         <section>
@@ -95,15 +95,15 @@
             <pre class="code scroll">
     window.onload = () => {
         const listButton = document.getElementById('run-for-loop');
-    
+
         listButton.onclick = () => {
             const myList = document.getElementById('my-list');
-                // WRAP THE NEXT LINE IN A for-loop that iterates over a variable named i. 
+                // WRAP THE NEXT LINE IN A for-loop that iterates over a variable named i.
                 // The loop should iterate 5 times (count from zero to five).
                 elfCode.appendToList(myList, i);
                 // END LOOP
         }
-    }                    
+    }
             </pre>
         </section>
 
