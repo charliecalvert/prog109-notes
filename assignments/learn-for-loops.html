@@ -70,9 +70,10 @@
 
             <pre class="code scroll">
 &lt;button id="set-text" type="button"&gt;Set Text&lt;/button&gt;
+&lt;ul id="myList"&gt;&lt;/ul&gt;
             </pre>
 
-            <p>Change the <b>id</b> to <b>run-for-loop</b> and the content to to <b>Run for Loop</b>.</p>
+            <p>Change the <b>id</b> to <b>runForLoop</b> and the content to to <b>Run for Loop</b>.</p>
 
         </section>
 
@@ -83,7 +84,7 @@
 
             <p>Link our JavaScript files into <b>for-loop.html</b>.</p>
             <pre class="code scroll">
-&lt;script src="./for-loop.js"&gt;&lt;/script&gt;
+&lt;script src="./index.js"&gt;&lt;/script&gt;
             </pre>
 
         </section>
@@ -93,10 +94,10 @@
             <p>In <b>index.js</b> let's run a for loop and display it in our HTML file.</p>
             <pre class="code scroll">
     window.onload = () => {
-        const listButton = document.getElementById('run-for-loop');
+        const listButton = document.getElementById('runForLoop');
 
         listButton.onclick = () => {
-            const myList = document.getElementById('my-list');
+            const myList = document.getElementById('myListt');
                 // WRAP THE NEXT LINE IN A for-loop that iterates over a variable named i.
                 // The loop should iterate 5 times (count from zero to five).
                 elfCode.appendToList(myList, i);
