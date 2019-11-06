@@ -78,32 +78,15 @@
         </section>
 
         <section>
-            <h2>Elf Code</h2>
+            <h2>Link Code</h2>
 
-            <p>Sometimes we have files that we use in multiple places in our code. One such a file is <b>elf-code.js</b>
-                from the ListButton assignment. As you may know, here is the contents of that file:</p>
             
-            <pre class="scroll code">
-const elfCode = {
-    appendToList: (list, value) => {
-        const li = document.createElement("li");
-        li.appendChild(document.createTextNode(value));
-        list.appendChild(li);
-    }
-}
-            </pre>
 
             <p>Link our JavaScript files into <b>for-loop.html</b>.</p>
-            <pre><code>
-    &lt;script src="./elf-code.js"&gt;&lt;/script&gt;
-    &lt;script src="./for-loop.js"&gt;&lt;/script&gt;
-            </code></pre>
+            <pre class="code scroll">
+&lt;script src="./for-loop.js"&gt;&lt;/script&gt;
+            </pre>
             
-            <p>In <b>index.html</b> also add an unordered list</p>
-
-            <pre><code>
-    &lt;ul id="my-list"&gt;&lt;/ul&gt;
-            </code></pre>
         </section>
 
         <section>
@@ -121,16 +104,6 @@ const elfCode = {
                 // END LOOP
         }
     }                    
-            </pre>
-        </section>
-
-        <section id="input-control">
-            <p>Let's make the program a bit more interesting by allowing the user to enter text, and to insert the text into our list when the button is clicked.</p>
-
-            <p>Add an input control to our HTML file:</p>
-
-            <pre class="code scroll">
-                
             </pre>
         </section>
 
