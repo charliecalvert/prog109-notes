@@ -12,6 +12,7 @@
             padding-top: 15px;
             text-align: left;
         }
+
     </style>
 </head>
 
@@ -24,6 +25,14 @@
     </header>
 
 
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#if-statements">if Statements</a></li>
+            <li><a href="#if-else">if-else Statements</a></li>
+            <li><a href="#switcher">Switch Statements</a></li>
+            <li><a href="#debug">Debug with console.log</a></li>
+        </ul>
+    </nav>
     <main>
         <section>
             <h2>Making Decisions</h2>
@@ -38,11 +47,11 @@
                     provide an alternative syntax.</li>
             </ul>
 
-            <p>You will be asked to test and create some code in this assignment. To get started, create a file called 
+            <p>You will be asked to test and create some code in this assignment. To get started, create a file called
                 <b>javascript-tests/branching.js</b>. Do your work in this file.
             </p>
         </section>
-        <section>
+        <section id="if-statements">
 
             <h2>if Statement</h2>
 
@@ -55,7 +64,7 @@
 
         </section>
 
-        <section>
+        <section id="if-else">
             <h2>if-else Statement</h2>
 
             <p>We can have one or more else statements.</p>
@@ -106,7 +115,8 @@
         </section>
 
         <section id="button-click">
-            <p>Create a file called <b>javascript-tests/branching.html</b> Initialize it as usual with HTML 5. Include a script tag to link in <b>branching.js</b></p>
+            <p>Create a file called <b>javascript-tests/branching.html</b> Initialize it as usual with HTML 5. Include a
+                script tag to link in <b>branching.js</b></p>
 
             <pre class="code scroll">
     &lt;script src="./branching.js"&gt;&lt;/script&gt;
@@ -124,13 +134,16 @@
     &lt;button&gt;Show Simple Branch&lt;/button&gt;
             </pre>
 
-            <p>We are going to want to respond when the user clicks on the button. Many people have learned to take the first steps to this goal by writing code like this:</p>
+            <p>We are going to want to respond when the user clicks on the button. Many people have learned to take the
+                first steps to this goal by writing code like this:</p>
 
             <pre class="code scroll">
     &lt;button onclick="simpleBranchAction"&gt;Show Simple Branch&lt;/button&gt;
             </pre>
 
-            <p>This is a bad practice and should be discourged. For more on this subject, go <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">here</a> and search the section called <b>inline event handlers — don't use these</b>.</p>
+            <p>This is a bad practice and should be discourged. For more on this subject, go <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">here</a> and
+                search the section called <b>inline event handlers — don't use these</b>.</p>
 
             <p>You should instead simply put an <b>id</b> on your button:</p>
 
@@ -156,7 +169,33 @@
     }                
             </pre>
 
-            <p>We will discuss this code in class. You can, of course, get more information on MDN and elsewhere across the web.</p>
+            <p>We will discuss this code in class. You can, of course, get more information on MDN and elsewhere across
+                the web.</p>
+        </section>
+
+        <section id="debug">
+            <h2>Use console.log for Debugging</h2>
+            <p>There are two main reasons for using&nbsp;<strong>console.log:</strong></p>
+
+            <ol>
+                <li>When we are writing browser-based applications we use it to help us debug our applications. For
+                    instance, if we want to know if an onclick event gets called, we can
+                    put&nbsp;<strong>concole.log</strong> inside the event to see let us know that it was executed:</li>
+            </ol>
+            <pre class="code scroll">
+simpleBranchAction.onclick = (event) =&gt; {
+        console.log('SIMPLE BRANCH ACTION ON CLICK WAS CALLED');
+        let height = 4;
+        // AND SO ON
+}
+                    </pre>
+            <p>Remember that we need to open the Developer Tools and turn to the Console page to see the output.</p>
+            <p><img class="normal-image" src="https://s3.amazonaws.com/bucket01.elvenware.com/images/debug-with-console.png" /></p>
+
+            <ol start="2">
+            <li>The other reason to use&nbsp;<strong>console.log</strong> is when we work at the command line, and then
+                console.log can be a primary means of creating output for our program.</li>
+            </ol>
         </section>
         <section>
             <h2>Learn</h2>
@@ -176,10 +215,14 @@
         <section id="turn-it-in">
             <h2>Turn it in</h2>
 
-            <p>In these examples we considered anything 5 or larger or as big, and anything less than 5 as small. Rewrite the code to have the turning point be not 5, but 25. Put your work in a file called <b>javascript-tests/branching.js</b> and <b>javascript-tests/branching.html</b>. Provide the URL for your repository and a link to your HTML file running on the GitHub pages live site. Link from your home page to <b>branching.html</b>.</p>
+            <p>In these examples we considered anything 5 or larger or as big, and anything less than 5 as small.
+                Rewrite the code to have the turning point be not 5, but 25. Put your work in a file called
+                <b>javascript-tests/branching.js</b> and <b>javascript-tests/branching.html</b>. Provide the URL for
+                your repository and a link to your HTML file running on the GitHub pages live site. Link from your home
+                page to <b>branching.html</b>.</p>
 
         </section>
-        
+
         <section>
             <h2>Ron's Video</h2>
 
