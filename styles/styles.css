@@ -113,6 +113,16 @@ nav li {
     padding: 8px;    
 }
 
+nav.main-nav ul {
+    list-style-type: disc;
+    padding-left:20px;
+    
+}
+nav.main-nav li {
+    display: list-item;
+    padding: 3px;
+}
+
 pre.scroll {
     overflow-x: auto;    
 }
