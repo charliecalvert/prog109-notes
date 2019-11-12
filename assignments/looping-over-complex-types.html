@@ -25,6 +25,7 @@
             <li><a href="#arrays">Arrays</a></li>
             <li><a href="#objects">Objects</a></li>
             <li><a href="#turn-it-in">Turn it in</a></li>
+            <li><a href="#global-objects">Global Objects such as window.</a></li>
         </ul>
     </nav>
 
@@ -183,6 +184,27 @@
             <h2>Turn it in</h2>
 
             <p>Push the work we did in class today. When you submit the assignment, state the name of your repo and the name of the file where we did our work. Create a file called <b>javascript-tests/looping-over-complex-types.html</b>. Give it a h1 element and your byline. Link in <b>looping-over-complex-types.js</b> and link to it from your home page. Provide a link to your home page on the GitHub Pages live site.</p>
+        </section>
+
+        <section id="global-objects">
+            <h2>Global Objects</h2>
+
+            <p>There are no instructions in this section, it is just a rather lengthy discussion of an important topic.</p>
+
+            <p>There are differences between the JavaScript in Node and JavaScript in a browser. Even though Node is built with the same V8 Engine used to create the JavaScript in a browser, there are still differences.</p>
+
+            <p>Step back and think for a second. When we are working at the command line there usually are no windows. That is the big difference between a GUI environment and a command-line environment: The GUI has windows and the command line does not. (I'm talking about windows in an application, not about the Microsoft product called Windows.)</p>
+
+            <p>As a result, there is no&nbsp;<strong>window</strong> object at the command prompt and Node does not have a global object called <b>window.</b>. This makes sense because usually there can be no buttons, no input controls, etc at the command prompt.</p>
+
+            <p>Once we start using&nbsp;<strong>window.onload</strong> or <strong>document.getElementId</strong> then we are committed to using a browser.</p>
+            
+            <p>There are ways to divide programs up so we can put GUI elements in one JavaScript file and non-GUI code in another file. This would allow us to test some of our code at the command line. For now, however, that is beyond the scope of this course.</p>
+
+            <p>Node has an object called <strong>global</strong> that plays the same role as the <strong>window</strong> object in a browser, but with all the GUI related code stripped from it:</p>
+
+            <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Global_object">https://developer.mozilla.org/en-US/docs/Glossary/Global_object</a></p>
+
         </section>
     </main>
 
