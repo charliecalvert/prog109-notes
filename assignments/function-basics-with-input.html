@@ -14,9 +14,15 @@
     <header>
         <h1>Function Basic with Input</h1>
     </header>
-    <nav></nav>
+    <nav>
+        <li><a href="#simple-functions">Simple Functions</a></li>
+        <li><a href="#get-started">Get Started</a></li>
+        <li><a href="#key-steps">Key Steps</a></li>
+        <li><a href="#show-results">Show Results</a></li>
+        <li><a href="#turn-it-in">Turn it in.</a></li>
+    </nav>
     <main>
-        <section>
+        <section id="simple-functions">
             <h2>Simple Functions</h2>
 
             <p>Our goal is to learn about JavaScript functions and to review getting simple input from the user. Use the <b>ListButton</b> and <b>Function Basics</b> assignments to help you with portions of this assignment.</p>
@@ -27,17 +33,15 @@
             </ul>
 
         </section>
-        <section>
+        <section id="get-started">
             <h2>Get Started</h2>
 
-            <p>Inside the <b>javascripts-tests</b> directory create <b>function-input.html</b> and <b>function-input.js</b>.
-                Add a <b>script</b> statement to the <b>head</b> element of the HTML file. Use the script element to
-                link in the JavaScript file. Create a link from your home page to <b>function-input.html</b>.</p>
+            <p>Inside the <b>javascripts-tests</b> directory create <b>function-input.html</b> and <b>function-input.js</b>. Initialize the HTML file as we always do. Add a <b>script</b> statement to the <b>head</b> element of the HTML file. Use the script element to link in the JavaScript file. Create a link from your home page to <b>function-input.html</b>.</p>
 
             <p>When declaring methods, use ES6 (fat arrow) syntax throughout.</p>
         </section>
 
-        <section>
+        <section id="key-steps">
             <h2>The Key Steps</h2>
 
             <p>We want to create a program that looks, at minimum, like this</p>
@@ -80,24 +84,44 @@
 
             <p>For instance, feet to inches would look like this:</p>
 
-            <pre class="code"><code>
+            <pre class="code scroll"><code>
 const feetToInches = (feet) => {
     return feet * 12;
 }
             </code></pre>
 
-            <p>To get the value of PI, use the constant <b>Math.PI</b>. For instance, seven + PI is <b>7 + Math.PI</b>. Note that calculating the area of a triangle requires two parameters.</p>
+            <p>To get the value of PI, use the constant <b>Math.PI</b>. For instance, seven + PI is <b>7 + Math.PI</b>. Note that calculating the area of a triangle requires two parameters. Here is how we pass to parameters to a function using fat arrow syntax:</p>
+
+            <pre class="class scroll">
+const add = (a, b) => {
+    return a + b;
+}
+            </pre>
+
+I'm sure you can imagine how this looks when we use function syntax rather than fat arrow syntax:
+
+            <pre class="code scroll">
+function add(a, b) {
+    return a + b;
+}
+            </pre>
+
+            <p><b>NOTE</b>: <i>Trying to understand <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">why arrow functions</a> were added to the language is beyond the scrope of this course. My goal is simply to help you both recognize and use the arrow function syntax. You need this skill because arrow functions are now very common, and you will encounter them when searching for help and examples  on the web.</i></p>
         </section>
 
-        <section>
+        <section id="show-results">
             <h2>Show Results in Html</h2>
             <p>In <b>function-input.html</b> create an H1 element with the content <b>Function Input</b>.</p>
-            <p>Add four paragraph elements that contain a span. Add an appropriate caption to each paragraph. Give the spans the following IDs:</p>
+            <p>Add four paragraph elements that contain an span with an id:</p>
+            <pre class="code scroll">
+&lt;span id="some-id"&gt;&lt;/span&gt;
+            </pre>
+            <p>Add an appropriate caption to each paragraph. Give the spans the following IDs:</p>
             <ul>
-                <li>feet-to-inches-display</li>
-                <li>miles-to-feet-display</li>
-                <li>area-of-triangle-display</li>
-                <li>area-of-circle-display</li>
+                <li>feetToInchesDisplay</li>
+                <li>milesToFeetDisplay</li>
+                <li>areaOfTriangleDisplay</li>
+                <li>areaOfCircleDisplay</li>
             </ul>
 
             For instance, write something like what follows:
@@ -106,16 +130,16 @@ const feetToInches = (feet) => {
 &lt;p&gt;
   &lt;b&gt;Feet to Inches&lt;/b&gt;: 
   &lt;span 
-    id="feet-to-inches-display"&gt;
+    id="feetToInchesDisplay"&gt;
   &lt;/span&gt;
 &lt;/p&gt;
             </code></pre>
 
-            <p>If you want, the paragraph and span can be all on one line.</p>
+            <p>If you want, the paragraph and span can be all on one line.</p>            
 
             <h2>Buttons and Inputs</h2>
 
-            We are now going to put four buttons next to four inputs. Create a div for each button and input pair.
+            <p>We are now going to put four buttons next to four inputs. Create a div for each button and input pair.</p>
             
             <ul>
                 <li>div
@@ -129,19 +153,19 @@ const feetToInches = (feet) => {
             <p>Set the IDs of the buttons to: </p>
 
             <ul>
-                <li>feet-to-inches-action</li>
-                <li>miles-to-feet-action</li>
-                <li>area-of-triangle-action</li>
-                <li>area-of-circle-action</li>
+                <li>feetToInchesAction</li>
+                <li>milesToFeetAction</li>
+                <li>areaOfTriangleAction</li>
+                <li>areaOfCircleAction</li>
             </ul>
 
             <p>Set IDs of Input controls to:</p>
 
             <ul>
-                <li>feet-to-inches-input</li>
-                <li>miles-to-feet-input</li>
-                <li>area-of-triangle-input</li>
-                <li>area-of-circle-input</li>
+                <li>feetToInchesInput</li>
+                <li>milesToFeetInput</li>
+                <li>areaOfTriangleInput</li>
+                <li>areaOfCircleInput</li>
             </ul>
 
             
@@ -167,14 +191,14 @@ const feetToInches = (feet) => {
                 For instance:
             </p>
 
-            <pre class="code scroll"><code>
+            <pre class="code scroll">
 window.onload = () => {
     const feetToInchesAction = 
-        document.getElementById('feet-to-inches-action');
+        document.getElementById('feetToInchesAction');
 
     feetToInchesAction.onclick = () => {
-        const feetToInchesInput = document.getElementById('feet-to-inches-input');
-        const feetToInchesDisplay = document.getElementById('feet-to-inches-display');
+        const feetToInchesInput = document.getElementById('feetToInchesInput');
+        const feetToInchesDisplay = document.getElementById('feetToInchesDisplay');
 
         feetToInchesDisplay.textContent = feetToInches(feetToInchesInput.value);
     };
@@ -184,9 +208,11 @@ const feetToInches = (feet) => {
     return feet * 12;
 };
                     
-            </code></pre>
+            </pre>
 
+            <p>Remember: you will need to match the IDs declared in your HTML to the IDs you use in your JavaScript calls to <b>document.getElementById</b>. This can prove to be surprisingly tricky.</p>
             
+            <p>If I give an HTML element an ID of <b>someId</b>, and then write <b>getElementById('sameId')</b>, my code will not work. Little typos such as <b>someId</b> vs <b>sameId</b> are so easy to make that I suggest block copying your IDs from the HTML file to your JavaScript code. If you get errors or no response when you click a button, a good place to start your debug process is to make sure your IDs match. Using <b>console.log</b> or breakpoints to help you see exactly what is happening would be a likely second step.</p>
         </section>
 
         <section>
@@ -219,14 +245,25 @@ const feetToInches = (feet) => {
                 exclusively, to the CSS properties we have discussed in class.</p>
         </section>
 
-        <section>
+        <section id="turn-it-in">
             <h2>Turn it in</h2>
 
-            <p>Push your repository. When you submit your assignment, tell the me the folder and file names you have
+            <p>Push your repository. When you submit your assignment, tell me the folder and file names you have
                 used. (The folder and file names should, of course, be as specified above. If you have, however, gone
-                off the res, then let me know.) You <b>must</b> provide a link to your page running on GitHub Pages.
-                It's okay to include a link to your repository, in fact, I want you to do that. But also be sure to
-                include a clickable link to your running pages. Use the Canvas Text page to provide these links.</p>
+                off the res, then let me know.) When you turn in the assignment, also include a link to your repository.</p>
+                
+            <p>You <b>must</b> provide a link to your page running on GitHub Pages.
+                Be sure to include a clickable link to your running pages. Use the Canvas Text page to provide these links.
+                Often after you paste in a link it becomes "hot" immediately. That is, it shows up in blue, underlined
+                text. If this does not happen, put your cursor at the end of the link and press enter. That should "activate"
+                the link. 
+            </p>
+
+            <p>Hot link: <a href="https://www.google.com/">https://www.google.com/</a></p>
+
+            <p>Cold link: <a href="https://www.google.com/"></a>https://www.google.com/</p>
+
+            <p>Note that we can just click on the hot link to use it, but the cold link requires a cut and paste operation.</p>
         </section>
     </main>
     <footer>
