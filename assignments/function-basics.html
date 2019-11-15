@@ -129,7 +129,9 @@ function simple() {
 
             <p>Finally, tell the button to call our function when it is clicked</p>
             <pre class="code"><code>
-functionCallsAction.onclick = simple;
+functionCallsAction.onclick = function() {
+    simple();
+}
             </code></pre>
             <p>Note that we will need to modify the other functions so that, in addition to the console.log statements,
                 they also set the <b>textContent</b> of
