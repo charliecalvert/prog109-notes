@@ -112,8 +112,8 @@ const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
 const functionCallsAction = document.getElementById('functionCallsAction');
             </code></pre>
 
-            <p>Our goal now is to make the text in our functions to not only appear in the console window, 
-               but also in our HTML PAGES. Modify your version of the <b>simple</b> function, 
+            <p>Our goal now is to make the text in our functions to appear not only in the console window, 
+               but also in our HTML pages. Modify your version of the <b>simple</b> function, 
                so that it will be able to modify the HTML by accessing the <b>textContent</b> property of the paragraph element. 
                This will set the content of the P element. In other words, your goal is to display text in one of
                the empty paragraph elements on the HTML page. For example, your code might look a little, but 
@@ -126,6 +126,8 @@ function simple() {
     simpleFunctionDisplay.textContent = "simple";
 }
             </code></pre>
+
+            <p><b>HINT</b>. <i>The function I'm refering to begins with the word <b>simple</b>, but is a bit longer.</i></p>
 
             <p><b>NOTE</b>: <i>We have a slight preference for <b>textContent</b> over <b>innerHTML</b> as it is faster
                     and a bit safer. But if you want to insert HTML into an element rather than plain text, then use <b>innerHTML</b>.</i></p>
