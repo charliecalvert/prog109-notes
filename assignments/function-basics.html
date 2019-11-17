@@ -101,6 +101,17 @@ window.onload = () => {
 }
                 </code>
             </pre>
+            <p>Please remember that the <b>window</b> object is only available in the browser. If we try to run code 
+            that uses <b>window</b> from the command prompt it will raise an exception. It will, however, run smoothly 
+            in a browser.</p>
+
+            <p>Once we introduce <b>window</b> into a JavaScript file then we may not be able to run it 
+            with Node at the command prompt. I say "may" because we could reference the <b>window</b> object inside 
+            a function that does not get called, and hence the rules of scoping would ensure that no
+            exception would be raised. But for now, it is simplest if you just think: "Ok, I have referenced 
+            the <b>window</b> object so I should begin working in the browser rather than at the command prompt."
+            </p>
+            
         </section>
         <section id="modify-paragraphs">
             <h2>Modify Paragraph Elements</h2>
