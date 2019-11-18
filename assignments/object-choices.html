@@ -73,10 +73,10 @@
                             method.</li>
                         <li>Here's a hint. The declaration for the method declared outside the object declaration will
                             look something like <b>ObjectName.methodName = &lt;Implement an anonymous function
-                                here.&gt;</b>.)</li>
+                                here.&gt;</b>.</li>
                     </ul>
                 </li>
-                <li><i>Do the best you can with this one. I will grade it lightly. </i>Create a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor">constructor
+                <li><i>Do the best you can with this one. I will grade it lightly. </i>Create a <a href="https://www.thecodeship.com/web-development/methods-within-constructor-vs-prototype-in-javascript/">constructor
                         function</a> called <b>FunctionObject</b> that contains a method called <b>sayName</b> that is
                     declared on the <b>prototype</b> of the <b>FunctionObject</b>. At the bottom of the file,
                     instantiate the object with <b>new</b> and call the method. (When I say constructor function, this
@@ -106,23 +106,60 @@
                 three objects. </p>
         </section>
 
+        <section id="constructor-functions">
+            <h2>Constructor Functions</h2>
+
+            <p>The constructor functions I want you to create begin with a capital letter and are substantiated with new:</p>
+                
+            <pre class="code scroll">
+function Foo() {}
+const foo = new Foo();
+            </pre>
+            <p>There are two ways to add methods to constructor functions</p>
+
+            <ol>
+                <li>with <b>this</b></li>
+                <li>with <b>prototype</b></li>
+            </ol>
+
+            <p>We prefer to use prototype:</p>
+
+            <pre class="code scroll">
+function Foo() {
+    this.bar = function() {
+        return 'bar';
+    }
+
+    Foo.prototype.qux = function() {
+        return 'qux';
+    }
+}
+const foo = new Foo();
+console.log(foo.bar()); // prints bar
+console.log(foo.qux()); // prints qux                    
+            </pre>
+
+            <p>Though both techniques work, we prefer using <b>prototype</b> because it 
+            provides better support for inheritance and other JavaScript features.</p>
+        </section>
+
         <section>
             <h2>Show Results in Html</h2>
             <p>In <b>object-choices.html</b> create an H1 element with the content <b>Object Choices</b>.</p>
             <p>Add three empty paragraph elements. Give them the following IDs:</p>
             <ul>
-                <li>simple-object-display</li>
-                <li>function-object-display</li>
-                <li>custom-class-display</li>
+                <li>simpleObjectDisplay</li>
+                <li>functionObjectDisplay</li>
+                <li>customClassDisplay</li>
             </ul>
 
             <p>Add three buttons. Give them the labels <b>Simple Object</b> <b>Function Object</b> and <b>Custom Class</b>.
                 Set the IDs of the buttons to: </p>
 
             <ul>
-                <li>simple-object-action</li>
-                <li>function-object-action</li>
-                <li>custom-class-action</li>
+                <li>simpleObjectAction</li>
+                <li>functionObjectAction</li>
+                <li>customClassCction</li>
             </ul>
 
             <p>In <b>object-choices.js</b>, inside an <b>window.onload</b> method, respond to clicks on the button by
@@ -159,9 +196,9 @@
         <section>
             <h2>Styles</h2>
 
-            <p>Style your buttons as you did in the <b>List Button</b> assignment. Also style your paragraph elements
+            <p>Style your buttons as you did in the <b>List Button</b> assignment or with some similar scheme. Also style your paragraph elements
                 to use a 20 point or larger font, and perhaps use a cursive font. Add any other custom styling to the
-                page that you want, but be sure all the styles you use are custom written by hand. Do not block copy
+                page that you want, but be sure all the styles you use are custom written by hand and have been covered in class. Do not block copy
                 CSS from some other project you find on the web, and do not use CSS properties that we have not
                 discussed in class. (Okay, I might take a maximum one or two other properties, but only if you explain
                 how they work in the paragraph you added at top of the HTML page.) In other words, I don't want you
