@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Function Basic with Input</title>
-    <link rel="icon" type="image/png" href="favicon.png"> 
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
@@ -25,7 +25,9 @@
         <section id="simple-functions">
             <h2>Simple Functions</h2>
 
-            <p>Our goal is to learn about JavaScript functions and to review getting simple input from the user. Use the <b>ListButton</b> and <b>Function Basics</b> assignments to help you with portions of this assignment.</p>
+            <p>Our goal is to learn about JavaScript functions and to review getting simple input from the user. Use the
+                <b>ListButton</b> and <b>Function Basics</b> assignments to help you with portions of this assignment.
+            </p>
 
             <ul>
                 <li><a href="https://www.elvenware.com/teach/assignments/Browser/ListButton.html">List Button</a></li>
@@ -36,7 +38,10 @@
         <section id="get-started">
             <h2>Get Started</h2>
 
-            <p>Inside the <b>javascripts-tests</b> directory create <b>function-input.html</b> and <b>function-input.js</b>. Initialize the HTML file as we always do. Add a <b>script</b> statement to the <b>head</b> element of the HTML file. Use the script element to link in the JavaScript file. Create a link from your home page to <b>function-input.html</b>.</p>
+            <p>Inside the <b>javascripts-tests</b> directory create <b>function-input.html</b> and
+                <b>function-input.js</b>. Initialize the HTML file as we always do. Add a <b>script</b> statement to the
+                <b>head</b> element of the HTML file. Use the script element to link in the JavaScript file. Create a
+                link from your home page to <b>function-input.html</b>.</p>
 
             <p>When declaring methods, use ES6 (fat arrow) syntax throughout.</p>
         </section>
@@ -46,9 +51,12 @@
 
             <p>We want to create a program that looks, at minimum, like this</p>
 
-            <p><img class="normal-image" src="https://s3.amazonaws.com/bucket01.elvenware.com/images/function-input-ui.png" alt="Function input ui"></p>
+            <p><img class="normal-image"
+                    src="https://s3.amazonaws.com/bucket01.elvenware.com/images/function-input-ui.png"
+                    alt="Function input ui"></p>
 
-            <p>Create a <b>window.onload = () => {}</b> block as we have in previous programs. Just below it, create four functions as specified in this table:</p>
+            <p>Create a <b>window.onload = () => {}</b> block as we have in previous programs. Just below it, create
+                four functions as specified in this table:</p>
 
             <table>
                 <thead>
@@ -90,7 +98,9 @@ const feetToInches = (feet) => {
 }
             </code></pre>
 
-            <p>To get the value of PI, use the constant <b>Math.PI</b>. For instance, seven + PI is <b>7 + Math.PI</b>. Note that calculating the area of a triangle requires two parameters. Here is how we pass to parameters to a function using fat arrow syntax:</p>
+            <p>To get the value of PI, use the constant <b>Math.PI</b>. For instance, seven + PI is <b>7 + Math.PI</b>.
+                Note that calculating the area of a triangle requires two parameters. Here is how we pass to parameters
+                to a function using fat arrow syntax:</p>
 
             <pre class="class scroll">
 const add = (a, b) => {
@@ -98,7 +108,7 @@ const add = (a, b) => {
 }
             </pre>
 
-I'm sure you can imagine how this looks when we use function syntax rather than fat arrow syntax:
+            I'm sure you can imagine how this looks when we use function syntax rather than fat arrow syntax:
 
             <pre class="code scroll">
 function add(a, b) {
@@ -106,7 +116,12 @@ function add(a, b) {
 }
             </pre>
 
-            <p><b>NOTE</b>: <i>Trying to understand <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">why arrow functions</a> were added to the language is beyond the scrope of this course. My goal is simply to help you both recognize and use the arrow function syntax. You need this skill because arrow functions are now very common, and you will encounter them when searching for help and examples  on the web.</i></p>
+            <p><b>NOTE</b>: <i>Trying to understand <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">why
+                        arrow functions</a> were added to the language is beyond the scrope of this course. My goal is
+                    simply to help you both recognize and use the arrow function syntax. You need this skill because
+                    arrow functions are now very common, and you will encounter them when searching for help and
+                    examples on the web.</i></p>
         </section>
 
         <section id="show-results">
@@ -125,7 +140,7 @@ function add(a, b) {
             </ul>
 
             For instance, write something like what follows:
-    
+
             <pre class="code"><code>
 &lt;p&gt;
   &lt;b&gt;Feet to Inches&lt;/b&gt;: 
@@ -135,12 +150,13 @@ function add(a, b) {
 &lt;/p&gt;
             </code></pre>
 
-            <p>If you want, the paragraph and span can be all on one line.</p>            
+            <p>If you want, the paragraph and span can be all on one line.</p>
 
             <h2>Buttons and Inputs</h2>
 
-            <p>We are now going to put four buttons next to four inputs. Create a div for each button and input pair.</p>
-            
+            <p>We are now going to put four buttons next to four inputs. Create a div for each button and input pair.
+            </p>
+
             <ul>
                 <li>div
                     <ul>
@@ -168,7 +184,7 @@ function add(a, b) {
                 <li>areaOfCircleInput</li>
             </ul>
 
-            
+
             <p>Give them the appropriate content for the label of each button. For instance, the first would be <b>Feet
                     to Inches</b></p>
 
@@ -179,14 +195,15 @@ function add(a, b) {
             <p>Recall that the <a href="function-basics.html">Function Basics</a> assignment contains hints on how to
                 perform these tasks.</p>
 
-            <p>In particular, remember that you will need to ask the document to use the id to get the element for the: </p>
+            <p>In particular, remember that you will need to ask the document to use the id to get the element for the:
+            </p>
 
             <ul>
                 <li>buttons</li>
                 <li>inputs</li>
                 <li>paragraphs</li>
             </ul>
-            
+
             <p id="onload">
                 For instance:
             </p>
@@ -210,9 +227,15 @@ const feetToInches = (feet) => {
                     
             </pre>
 
-            <p>Remember: you will need to match the IDs declared in your HTML to the IDs you use in your JavaScript calls to <b>document.getElementById</b>. This can prove to be surprisingly tricky.</p>
-            
-            <p>If I give an HTML element an ID of <b>someId</b>, and then write <b>getElementById('sameId')</b>, my code will not work. Little typos such as <b>someId</b> vs <b>sameId</b> are so easy to make that I suggest block copying your IDs from the HTML file to your JavaScript code. If you get errors or no response when you click a button, a good place to start your debug process is to make sure your IDs match. Using <b>console.log</b> or breakpoints to help you see exactly what is happening would be a likely second step.</p>
+            <p>Remember: you will need to match the IDs declared in your HTML to the IDs you use in your JavaScript
+                calls to <b>document.getElementById</b>. This can prove to be surprisingly tricky.</p>
+
+            <p>If I give an HTML element an ID of <b>someId</b>, and then write <b>getElementById('sameId')</b>, my code
+                will not work. Little typos such as <b>someId</b> vs <b>sameId</b> are so easy to make that I suggest
+                block copying your IDs from the HTML file to your JavaScript code. If you get errors or no response when
+                you click a button, a good place to start your debug process is to make sure your IDs match. Using
+                <b>console.log</b> or breakpoints to help you see exactly what is happening would be a likely second
+                step.</p>
         </section>
 
         <section>
@@ -236,7 +259,8 @@ const feetToInches = (feet) => {
     }
             </code></pre>
 
-            <p>If you want, style your buttons as you did in the <b>List Button</b> assignment. Add any other custom styling to the
+            <p>If you want, style your buttons as you did in the <b>List Button</b> assignment. Add any other custom
+                styling to the
                 page that you want, but be sure all the styles you use are custom written by hand. Do not block copy
                 CSS from some other project you find on the web, and do not use CSS properties that we have not
                 discussed in class. (Okay, I might take a maximum one or two other properties, but only if you explain
@@ -245,25 +269,49 @@ const feetToInches = (feet) => {
                 exclusively, to the CSS properties we have discussed in class.</p>
         </section>
 
+        <section id="triangle">
+
+            <h2>Triangle Hints</h2>
+            <p>The triangle is tricky because it requires two parameters rather than just one. Think of our add function
+                that we have discussed in class several times:</p>
+            <pre class="code scroll">
+function add(a, b) {
+   return a + b;
+}
+            </pre>
+            <p>This function takes two parameters: <b>a</b> and <b>b</b>.</p>
+            <p>I tell you that you can get the area of a triangle by:</p>
+            <pre>area = base times height divided by two</pre>
+            <p>Perhaps you can see that you can't calculate the area without knowing two things. The user has to enter
+                in both things, and you have to retrieve both bits of user input and pass them as parameters to the
+                function that calculates the triangle's area.</p>
+            <p>Okay, that is enough of a hint.</p>
+        </section>
+
         <section id="turn-it-in">
+
             <h2>Turn it in</h2>
 
             <p>Push your repository. When you submit your assignment, tell me the folder and file names you have
                 used. (The folder and file names should, of course, be as specified above. If you have, however, gone
-                off the res, then let me know.) When you turn in the assignment, also include a link to your repository.</p>
-                
+                off the res, then let me know.) When you turn in the assignment, also include a link to your repository.
+            </p>
+
             <p>You <b>must</b> provide a link to your page running on GitHub Pages.
-                Be sure to include a clickable link to your running pages. Use the Canvas Text page to provide these links.
+                Be sure to include a clickable link to your running pages. Use the Canvas Text page to provide these
+                links.
                 Often after you paste in a link it becomes "hot" immediately. That is, it shows up in blue, underlined
-                text. If this does not happen, put your cursor at the end of the link and press enter. That should "activate"
-                the link. 
+                text. If this does not happen, put your cursor at the end of the link and press enter. That should
+                "activate"
+                the link.
             </p>
 
             <p>Hot link: <a href="https://www.google.com/">https://www.google.com/</a></p>
 
             <p>Cold link: <a href="https://www.google.com/"></a>https://www.google.com/</p>
 
-            <p>Note that we can just click on the hot link to use it, but the cold link requires a cut and paste operation.</p>
+            <p>Note that we can just click on the hot link to use it, but the cold link requires a cut and paste
+                operation.</p>
         </section>
     </main>
     <footer>

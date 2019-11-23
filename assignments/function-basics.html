@@ -101,6 +101,9 @@ window.onload = () => {
 }
                 </code>
             </pre>
+
+            <p>The <b>onload</b> function is called when an HTML file (<b>document</b>) has finished loading into the main browser <b>window</b>. It is important because our JavaScript file uses <b>document.getElementById</b> to retrieve a handle to HTML elements on the web page you created. If the HTML page (<b>document</b>) has not been loaded, it can't be queried with <b>getElementById</b>. It would be like a student in the classroom asking me a question before I had arrived: it just wouldn't work. You have to wait for me to get there, and get set up, and then you can ask me a question. The <b>onload</b> event tells you that the page is loaded and can be queried, it tells you that Charlie is in the classroom and ready to answer questions</p>
+
             <p>Please remember that the <b>window</b> object is only available in the browser. If we try to run code 
             that uses <b>window</b> from the command prompt it will raise an exception. It will, however, run smoothly 
             in a browser.</p>
