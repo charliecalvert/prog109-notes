@@ -36,8 +36,18 @@
     <main>
         <section>
             <h2>Making Decisions</h2>
-            
-            <p>Learn how to use <b>boolean</b> statements to branch from one option to another. If there are two possible paths, we can decide which path to take in a particular set of circumstances. If the our program is in a particular then we do one thing, if it is in another state then we do something else.</p>
+
+            <p>Learn how to use <b>boolean</b> statements to branch from one option to another. If there are two possible paths, we can decide which path to take in a particular set of circumstances. If the our program is in a particular state then we do one thing, if it is in another state then we do something else.</p>
+
+            <p>In this program there should be three different kinds of branches:</p>
+
+            <ul>
+                <li>A simple if statement</li>
+                <li>Two different kinds of of <b>if-else</b> statements.</li>
+                <li>A switch statement</li>
+            </ul>
+
+            <p>We will call them all on button clicks.</p>
 
             <h3>Branching and Conditional Statements</h3>
 
@@ -106,11 +116,11 @@
         case 'little':
             console.log('Switch: a little one is smaller than five');
             break;
-    
+
         case ('big'):
             console.log('Switch: a big one is five or greater');
             break;
-    
+
         default:
             console.log('We do not know about this one.')
     }
@@ -161,20 +171,33 @@
     window.onload = () => {
         const simpleBranchAction = document.getElementById('simpleBranchAction');
         const simpleBranchDisplay = document.getElementById('simpleBranchDisplay');
-        
+
         simpleBranchAction.onclick = (event) => {
             let height = 4;
             if (height >= 5) {
                 simpleBranchDisplay.textContent = 'We have a big one';
             } else {
                 simpleBranchDisplay.textContent = 'We have a little one';
-            }   
+            }
         }
-    }                
+    }
             </pre>
 
             <p>We will discuss this code in class. You can, of course, get more information on MDN and elsewhere across
                 the web.</p>
+        </section>
+
+        <section id="four-buttons">
+          <h2>Four Buttons</h2>
+
+          <p>Ultimately we want four pairs of buttons and paragraphs with these IDs</p>
+
+          <ul>
+            <li>simpleBranchDisplay - simpleBranchAction</li>
+            <li>simpleIfElseDisplay - simpleIfElseAction</li>
+            <li>complexIfElseDisplay - simpleIfElseAction</li>
+            <li>switchDisplay - switchAction</li>            
+          </ul>
         </section>
 
         <section id="debug">
@@ -224,10 +247,6 @@ simpleBranchAction.onclick = (event) =&gt; {
                 <b>javascript-tests/branching.js</b> and <b>javascript-tests/branching.html</b>. Provide the URL for
                 your repository and a link to your HTML file running on the GitHub pages live site. Link from your home
                 page to <b>branching.html</b>.</p>
-
-            <p>For full credit, do this</p>
-
-            <p><img src="https://s3.amazonaws.com/bucket01.elvenware.com/images/branching-all-three.png" alt="Branching all three"></p>
 
         </section>
 
