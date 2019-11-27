@@ -108,6 +108,22 @@
         </section>
 
         <section>
+            <h2>Append to List</h2>
+
+            <p>Here is the code for appending text to a list:</p>
+            
+            <pre class="code scroll">
+const elfCode = {
+    appendToList: (list, value) => {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(value));
+        list.appendChild(li);
+    }
+};
+            </pre>
+        </section>
+
+        <section>
             <h2>Turn it in</h2>
 
             <p>Push your work and provide a link to your running <b>for-loop</b> code on your GitHub Pages site.</p>
