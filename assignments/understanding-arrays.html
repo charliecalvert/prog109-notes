@@ -176,21 +176,22 @@
             <p>This extra credit exercise is similar to the previous two exercises, but this time I want an <a href="https://www.elvenware.com/charlie/development/web/JavaScript/JavaScriptBasics.html#array-of-objects">array
                     of JavaScript object literals.</a>. Again, we will have a button and perhaps some nested lists.</p>
 
-            <p>Go to one of the following sites, and get the top seven languages and list their names and their
-                ranking. For instance, here is what one of the objects in your array of objects might look like:</p>
+            <p>Go to one of the sites listed below, and get the top seven languages and list their names and their
+                ranking. For instance, here are what two of the objects in your array of objects might look like:</p>
 
-            <pre class="code">
-                <code>
-    {
-        language: 'JavaScript',
-        rank: 1
-    }
-                </code>
+            <pre class="code scroll">
+[{
+    language: 'JavaScript',
+    rank: 1
+}, {
+    language: 'C#',
+    rank: 2
+}]            
             </pre>
 
-            <p>Code to sort our Array of Object by rank:</p>
+            <p>Here is code to sort our Array of Object by rank:</p>
 
-    <pre class="code scroll"><code>
+        <pre class="code scroll">
 
 // Code omitted here        
 arrays.languagePopularity.sort(compareRank);
@@ -208,18 +209,21 @@ function compareRank(a, b) {
     }
     return comparison;
 }
-    </code></pre>   
+        </pre>   
     
-            <p>When we ask to sort our array of objects, we need to tell the JavaScript sort method how to order the items in the array. The compareRank function is our way of telling JavaScript how to order the items when it sorts them.</p>
+            <p>When we ask to sort our array of objects, we need to tell the JavaScript sort method how to order the items in the array. We do this by returning 0, 1 or -1, depending on whether any pair of items are equal, larger, or smaller than one another. For instance, if the two items were the strings <b>foo</b> and <b>foo</b> then we would return 0 since they are equal. If the items were the strings <b>able</b> and <b>baker</b> or <b>2</b> and <b>1</b> then we return 1.</p>
+            
+            <p>The <b>compareRank</b> function is our way of telling JavaScript how to order the items when it sorts them. The JavaScript engine takes care of the task of passing in the items, we just need to set up the method that compares them. Note that we pass our custom function name to the <b>Array.sort</b> method: <b>arrays.langaugePopularity.sort(compareRank).</b></p>
 
             <p>Here is where to look for the rankings</p>
             <ul>
+                <li><a href="https://insights.stackoverflow.com/survey/2019/#technology">Stack Overflow</a></li>
                 <li><a href="https://hackernoon.com/top-3-most-popular-programming-languages-in-2018-and-their-annual-salaries-51b4a7354e06">Hacker
                         Noon, languages and salaries</a></li>
                 <li><a href="https://www.tiobe.com/tiobe-index/">TIOBE</a></li>
                 <li><a href="http://pypl.github.io/PYPL.html">PYPL</a></li>
                 <li><a href="https://octoverse.github.com/projects#languages">GitHub</a></li>
-                <li><a href="https://insights.stackoverflow.com/survey/2018/#technology">Stack Overflow</a></li>
+                
             </ul>
         </section>
 
