@@ -215,6 +215,10 @@ function compareRank(a, b) {
             
             <p>The <b>compareRank</b> function is our way of telling JavaScript how to order the items when it sorts them. The JavaScript engine takes care of the task of passing in the items, we just need to set up the method that compares them. Note that we pass our custom function name to the <b>Array.sort</b> method: <b>arrays.langaugePopularity.sort(compareRank).</b></p>
 
+            <p>One of the tricky parts of our <b>comparison</b> method is that we are comparing not simple strings or numbers, but objects. That means we need to pick out the field of the object that we want to sort on. That is what this line of code does: <b>const rankA = a.rank;</b>. This says that we have an object with a property called <b>rank</b> and we want to sort our code on that field. In our case, we might want to create two comparison methods, one for sorting on <b>rank</b> and one for sorting on some other field. (I'm intentionally being a bit vague here to leave you with the task of writing the second <b>comparison</b> method.)</p>
+
+            <p>Sometimes when comparing strings it is best to ignore the case of the letters in the strings. One way to do that is set the strings to all uppercase: <b>const languageA = a.language.toUpperCase();</b></p>
+
             <p>Here is where to look for the rankings</p>
             <ul>
                 <li><a href="https://insights.stackoverflow.com/survey/2019/#technology">Stack Overflow</a></li>
