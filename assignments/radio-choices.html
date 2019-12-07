@@ -334,6 +334,18 @@ if (value.toLowerCase() === 'green') {
                 and then use the <b>textContent</b> property.
             </p>
 
+            <p>When implementing <b>showChoice</b> you are going to have to get a handle to the <b>span</b> in your HTML code 
+            where the user's choice will be displayed. By default, the value for the <b>span</b> is <b>unknown</b>. You need 
+            to change it to reflect the user's choice. For instance, the user might have chosen <b>green</b> or <b>blue</b> 
+            and you want to show to the user. It is a two step process:</p>
+
+            <ol>
+                <li>Get a handle to the span.</li>
+                <li>Use the handle to set the <b>textContent</b> of the span.</li>
+            </ol>
+
+            <p>The value you set the span to is passed as a parameter to <b>showChoice</b>.</p>
+
             <p>If you select the <strong>Blue</strong> option and press the button, the background of the form should
                 change to blue. I give you a method called <strong>setColor</strong> that swaps the HTML <strong>class</strong>
                 associated with the form. We use the <strong>class</strong> to set the <strong>background-color</strong>
